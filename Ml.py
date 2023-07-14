@@ -3,10 +3,18 @@ import os
 NamArray = []
 GradeArray = []
 bool(True)
+Iput = ""
+
+def callMethod():
+    Iput = input("ENTER NUMBER :")
+    if Iput.__eq__("1") :
+        PrintTerminal()
+        AddStudent()
+
 
 def Printmain() :
     print("1) Add Student"+"\t"+"2) Add Marks");
-    
+    callMethod()
     
 def PrintTerminal():
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -34,11 +42,10 @@ def AddStudent():
 
 class First:
     
-     Printmain()
-     Iput = input("ENTER NUMBER :")
-     if Iput.__eq__("1") :
-            PrintTerminal()
-            AddStudent()
+    Printmain()
+        
+    
+    
     
     
             
