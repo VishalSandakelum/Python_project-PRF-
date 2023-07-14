@@ -27,10 +27,11 @@ def PrintTerminal():
     
 def AddStudent():
     check = ""
+    nam = ""
     while bool :
         Name = input("Enter Name :")
         if Name != "" :
-            NamArray.append(Name)
+            nam = "ok"
         else :
             print("Please enter the name !") 
         
@@ -46,8 +47,12 @@ def AddStudent():
                         check = "ok"
                     else :
                         check = "no"
+                        break
                 if check.__eq__("ok"):   
                     IDArray.append(id)
+                    NamArray.append(Name)
+                else :
+                    print("Something wrong !")
         else :
             print("Please enter the Id !")
             
