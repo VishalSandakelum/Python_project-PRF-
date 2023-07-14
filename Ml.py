@@ -75,13 +75,13 @@ def AddMarks():
                     print(NamArray)
                     print("Name : "+""+NamArray[i])
                     python = int(input("Enter the Python marks : "))
-                    if python>=0 & python<=100:
+                    if (python>=0) & (python<=100):
                         pythonArray.append(python)
                     else:
                         print("Please enter valid (python) marks");
                 
                     java = int(input("Enter the Java marks : "))
-                    if java>=0 & java<=100:
+                    if (java>=0) & (java<=100):
                         javaArray.append(java)
                     else:
                         print("Please enter valid (java) marks.")
