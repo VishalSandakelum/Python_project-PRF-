@@ -26,6 +26,7 @@ def PrintTerminal():
     
     
 def AddStudent():
+    check = ""
     while bool :
         Name = input("Enter Name :")
         if Name != "" :
@@ -42,7 +43,11 @@ def AddStudent():
                 for i in range(len(IDArray)):
                     if id != IDArray[i] :
                         print(IDArray[i])
-                        IDArray.append(id)
+                        check = "ok"
+                    else :
+                        check = "no"
+                if check.__eq__("ok"):   
+                    IDArray.append(id)
         else :
             print("Please enter the Id !")
             
