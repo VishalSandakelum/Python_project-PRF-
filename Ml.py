@@ -106,8 +106,16 @@ def UpdateMarks():
             for i in range(len(IDArray)):
                 if id==IDArray[i]:
                     print("Name : "+""+NamArray[i])
-                    print("Python Marks : "+""+str(pythonArray[i]))
-                    print("Java Marks : "+""+str(javaArray[i]))
+                    if pythonArray[i] != "":
+                        print("Python Marks : "+""+str(pythonArray[i]))
+                        print("Java Marks : "+""+str(javaArray[i]))
+                        updatePython = int(input("Python Marks : "))
+                        if updatePython != "":
+                            pythonArray[i] = updatePython
+                        updateJava = int(input("Java Marks : "))
+                        if updateJava != "":
+                            javaArray[i] = updateJava
+                
     
         
         
