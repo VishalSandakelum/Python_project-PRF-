@@ -2,6 +2,8 @@ import os
 
 NamArray = []
 IDArray = []
+pythonArray = []
+javaArray = []
 bool(True)
 Iput = ""
 
@@ -40,6 +42,7 @@ def AddStudent():
             print("Id"+": "+id)
             if len(IDArray) == 0:
                 IDArray.append(id)
+                NamArray.append(Name)
             else:
                 for i in range(len(IDArray)):
                     if id != IDArray[i] :
@@ -64,9 +67,33 @@ def AddStudent():
         
             
 def AddMarks():
-    nam = input("Enter Student Name : ")
-    if nam !="":
-        print(nam)
+    while True:
+        id = input("Enter Student Id : ")
+        if id !="":
+            for i in range(len(IDArray)):
+                if id==IDArray[i]:
+                    print(NamArray)
+                    print("Name : "+""+NamArray[i])
+                    python = int(input("Enter the Python marks : "))
+                    if python>=0 & python<=100:
+                        pythonArray.append(python)
+                    else:
+                        print("Please enter valid (python) marks");
+                
+                    java = int(input("Enter the Java marks : "))
+                    if java>=0 & java<=100:
+                        javaArray.append(java)
+                    else:
+                        print("Please enter valid (java) marks.")
+                else:
+                    print("Something Wrong ! (Please check & enter the valid ID.)")
+            
+            if input("If you wan't to go back enter the 'y'/'n' : ").__eq__("y"):
+                PrintTerminal()
+                Printmain()
+                break
+            
+        
         
     
 
