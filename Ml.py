@@ -1,0 +1,39 @@
+import os
+
+print("1) Add Student"+"\t"+"2) Add Marks")
+
+NamArray = []
+GradeArray = []
+bool(True)
+
+def Printmain() :
+    print("1) Add Student"+"\t"+"2) Add Marks");
+    
+    
+def PrintTerminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+Iput = input("ENTER NUMBER :")
+if Iput.__eq__("1") :
+    Iput = ""
+    PrintTerminal()
+    
+    while bool :
+        Name = input("Enter Name :")
+        if Name != "" :
+            NamArray.append(Name)
+        else :
+            print("Please enter the name !") 
+        
+        Grade = input("Enter Grade :")
+        if Grade != "" :
+            GradeArray.append(Grade)
+        else :
+            print("Please enter the Grade !")
+            
+        Decition = input("If you wan't to go back enter the 'y'/'n' : ")
+        if Decition.__eq__("Y") or Decition.__eq__("y") :
+            bool(False)
+            PrintTerminal()
+            Printmain()
+            
