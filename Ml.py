@@ -1,7 +1,5 @@
 import os
 
-print("1) Add Student"+"\t"+"2) Add Marks")
-
 NamArray = []
 GradeArray = []
 bool(True)
@@ -12,12 +10,9 @@ def Printmain() :
     
 def PrintTerminal():
     os.system('cls' if os.name == 'nt' else 'clear')
-
-Iput = input("ENTER NUMBER :")
-if Iput.__eq__("1") :
-    Iput = ""
-    PrintTerminal()
     
+    
+def AddStudent():
     while bool :
         Name = input("Enter Name :")
         if Name != "" :
@@ -36,4 +31,14 @@ if Iput.__eq__("1") :
             bool(False)
             PrintTerminal()
             Printmain()
+
+class First:
+    
+     Printmain()
+     Iput = input("ENTER NUMBER :")
+     if Iput.__eq__("1") :
+            PrintTerminal()
+            AddStudent()
+    
+    
             
