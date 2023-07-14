@@ -20,7 +20,7 @@ def callMethod():
 
 def Printmain() :
     print("1) Add Student"+"\t"+"2) Add Marks");
-    print(IDArray)
+    print("  ")
     callMethod()
     
 def PrintTerminal():
@@ -99,6 +99,22 @@ def AddMarks():
 
 class First:
     
+    print("\t\t",end='')
+    for i in range(40):
+        print("-",end='')
+    print("")
+    for x in range(3):
+        print("\t\t",end='')
+        if x==1:
+            print("|"+"\t"+'STUDENT MANAGEMENT SYSTEM'+"      |")
+        else :
+            print("|"+"\t\t\t\t"+"       |") 
+    print("\t\t",end='')
+    for i in range(40):
+        print("-",end='')   
+    print(" ")
+    
+    print("\n\n")
     Printmain()
         
     
