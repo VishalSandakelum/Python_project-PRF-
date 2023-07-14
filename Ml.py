@@ -16,10 +16,15 @@ def callMethod():
     elif Iput.__eq__("2"):
         PrintTerminal()
         AddMarks()
+    
+    elif Iput.__eq__("3"):
+        PrintTerminal()
+        UpdateMarks()
 
 
 def Printmain() :
-    print("1) Add Student"+"\t"+"2) Add Marks");
+    print("\t\t"+"1) Add Student"+"\t\t"+"2) Add Marks");
+    print("\t\t"+"3) Update Marks"+"\t\t"+"4) Delete Student");
     print("  ")
     callMethod()
     
@@ -93,6 +98,17 @@ def AddMarks():
                 Printmain()
                 break
             
+    
+def UpdateMarks():
+    while True:
+        id = input("Enter Id : ")
+        if id !="":
+            for i in range(len(IDArray)):
+                if id==IDArray[i]:
+                    print("Name : "+""+NamArray[i])
+                    print("Python Marks : "+""+str(pythonArray[i]))
+                    print("Java Marks : "+""+str(javaArray[i]))
+    
         
         
     
